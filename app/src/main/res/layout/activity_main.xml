@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calistoga_regular"
+                android:text="Goddes Makeup"
+                android:textColor="#8b6d86"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.102"/>
+
+            <ImageView
+                android:id="@+id/imgInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/inicio"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-104dp"/>
+
+            <TextView
+                android:id="@+id/tvContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:fontFamily="@font/calistoga_regular"
+                android:text="Goddess Makeup es una tienda online de maquillaje en donde cada persona puede personalizar su propio maquillaje; puede escoger los colores de sus paletas de sombras, crear colores para los labiales y brochas con diseños personalizados.
+                Teniendo los mejores productos con la mejor calidad y 100% a tu estilo"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="397dp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8A6D85"
+                android:fontFamily="@font/calistoga_regular"
+                android:text="Formulario"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
